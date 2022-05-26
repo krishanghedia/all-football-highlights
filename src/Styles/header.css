@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  background-image: var(--main-grad);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.header__logo {
+  width: 10%;
+}
+/*# sourceMappingURL=header.css.map */

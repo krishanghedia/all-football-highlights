@@ -1,0 +1,9 @@
+.header {
+  width: 100%;
+  background-image: var(--main-grad);
+  box-shadow: var(--box-shadow);
+
+  &__logo {
+    width: 10%;
+  }
+}

@@ -1,0 +1,34 @@
+:root {
+  --main-grad: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  --box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  --main-white: rgba(255, 255, 255);
+  --main-black: rgba(0, 0, 0);
+  --default-padding: 1rem;
+  --border-radius: 10px;
+  --margin-lrg: 4rem;
+  --font-size-lrg: 5rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* FLUID AND RESPONSIVE IMAGES */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=base.css.map */
