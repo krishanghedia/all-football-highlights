@@ -15,25 +15,30 @@
   &__card {
     box-shadow: rgba(0, 0, 0, 0) 0px 4px 16px, rgba(0, 0, 0, 0.4) 0px 8px 24px,
       rgba(0, 0, 0, 0) 0px 16px 56px;
-    border-radius: var(--border-radius);
+    border-radius: var(--box-radius);
   }
 
   &__title,
   &__comp {
-    background-color: var(--main-black);
-    color: var(--main-white);
     padding: var(--default-padding);
     font-size: 1.5rem;
   }
 
   &__title {
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--box-radius);
+    border-top-right-radius: var(--box-radius);
   }
 
   &__comp {
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: var(--box-radius);
+    border-bottom-right-radius: var(--box-radius);
+  }
+
+  &__img {
+    width: 10%;
+    margin-right: 8px;
   }
 }
 

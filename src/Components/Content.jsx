@@ -1,11 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import ReplacementImage from "../../src/Images/replacement.png";
-// import FilteredHighlights from "./FilteredHighlights";
+import PremierLeaugeIcon from "../../src/Images/premier-league-icon.svg";
+import LaLigaIcon from "../../src/Images/la-liga-icon.png";
+import SerieAIcon from "../../src/Images/serie-a-icon.svg";
+import UeL from "../../src/Images/uel.png";
 
 const Content = (props) => {
   let allFootballHighlights = props.data;
-
   const [query, setQuery] = useState("");
 
   const onInputHandler = (e) => {
@@ -25,6 +27,13 @@ const Content = (props) => {
       }
     });
   }
+
+  const iconObj = {
+    "ENGLAND: Premier League": PremierLeaugeIcon,
+    "SPAIN: La Liga": LaLigaIcon,
+    "ITALY: Serie A": SerieAIcon,
+    "EUROPA CONFERENCE LEAGUE: Final": UeL,
+  };
 
   return (
     <>
@@ -61,6 +70,10 @@ const Content = (props) => {
                   </div>
                 </a>
                 <div className="highlights__comp">
+                  <img
+                    src={iconObj[highlights.competition]}
+                    className="highlights__img"
+                  ></img>
                   <p>{highlights.competition}</p>
                 </div>
               </div>
